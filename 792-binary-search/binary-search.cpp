@@ -5,7 +5,7 @@ public:
         int n = nums.size();
         int s = 0;
         int e = n-1;
-        int m = (s+e)/2;
+        int m = s + (e-s)/2;
 
         while(s<=e){
             if(nums[m] == target)
