@@ -30,7 +30,7 @@ public:
             string currWord = words[i];
             string currWordCopy = currWord;
             normalise(currWordCopy);
-            if(currWordCopy == pattern){
+            if(currWordCopy.compare(pattern) == 0){
                 ans.push_back(currWord);
             }
         }
